@@ -40,7 +40,7 @@
   }
   
   .item img {
-    border: 5px solid #183600;
+    /* border: 5px solid #183600; */
     max-width: 100%;
     height: auto;
     width: 100%;
