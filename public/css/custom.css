@@ -109,7 +109,11 @@ section {
 .obvi-link {
 	text-decoration: underline;
 }
-
+section {
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29);
+}
 /* TOP HEADER
 -------------------------------------------------- */
 
@@ -414,7 +418,7 @@ a.navbar-brand.mx-auto {
 }
 .footer-sec h3{
 	text-align: center;
-	color: #047244;
+	color: #000;
 	/* font-weight: bold; */
 }
 

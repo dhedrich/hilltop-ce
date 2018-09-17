@@ -1,19 +1,27 @@
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+  event.preventDefault()
+  $(this).ekkoLightbox()
+})
+
+
 /*------- Smooth Scroll -------*/
 var photoArr = [
   "backyard-charms",
   "branch",
-  "canopy",
+  // "canopy",
   "front-arch",
-  "front-fence",
+  // "front-fence",
   "front-porch",
   "front-sun-tree",
   "front-table",
   "hanging-flower",
   "lady-puppy",
-  "landscape",
+  // "landscape",
   "backyard-house",
   "backyard-green",
-  "hilltop-1"
+  "hilltop1",
+  // "hilltop1-2"
+  "hilltop1-umbrella"
 ]
 
 function shuffleArray(array) {
@@ -28,7 +36,7 @@ function shuffleArray(array) {
 shuffleArray(photoArr)
 
 for (i in photoArr) {
-  $("#masonry").append(`<div class="item"><img src="./img/${photoArr[i]}.jpg" alt=""></div>`)
+  $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"></a>`)
 }
 
 /*------- Smooth Scroll -------*/
