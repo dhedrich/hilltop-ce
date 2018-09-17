@@ -241,8 +241,6 @@ a.navbar-brand.mx-auto {
 
 /* SERVICES SECTION
 -------------------------------------------------- */
-.service-logo {
-}
 
 .service-sec .heading {
 	float: left;
@@ -275,6 +273,7 @@ a.navbar-brand.mx-auto {
 .service-sec h3 {
 	font-size: 23px;
 	font-weight: 600;
+	color: #183600;
 }
 .service-sec p {
 	line-height: 26px;

@@ -3,7 +3,7 @@
 
 .floater {
 	position: absolute;
-	top:69%;
+	top:62%;
 	bottom:0;
 	/* left:63%; */
 	right:59%;
@@ -43,6 +43,10 @@
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: flex-end;
 	/* -webkit-box-pack: center;
 	-ms-flex-pack: center;
 	-webkit-justify-content: center;
@@ -54,6 +58,13 @@
 }
 .swiper-slide h3 {
 	color: #fff;
+	padding:20px;
+	margin:10px 7% 25px 0;
+	/* background: #ffffff55;  */
+	-webkit-filter: drop-shadow(3px 3px 3px #222 );
+	filter: drop-shadow(3px 3px 3px #222);
+	/* font-family: 'Vollkorn', serif; */
+	font-weight: lighter;
 }
 .main-slider .slider-bg-position {
 	background-size: cover!important;
