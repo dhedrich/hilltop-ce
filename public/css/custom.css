@@ -169,8 +169,7 @@ section {
 	font-size: 14px;
 	font-weight: 500;
 	padding: 12px 18px!important;
-}
-.top-bar .nav-link {
+	border-bottom: 2px solid #00000000;
 	color: #000
 }
 .top-bar .navbar-nav .nav-item {
@@ -213,6 +212,27 @@ section {
 
 .dropdown-divider {
 	border-color: #183600;
+}
+
+a.navbar-brand.mx-auto {
+	padding-left: 0;
+}
+
+@media (max-width: 1200px) {
+	a.navbar-brand.mx-auto {
+		font-size: 16px;
+	}
+}
+@media (max-width: 992px) {
+	a.navbar-brand.mx-auto {
+		font-size: 26px;
+	}
+}
+@media (max-width: 767.5px) {
+	a.navbar-brand.mx-auto {
+		font-size: 20px;
+		margin-left: 20px !important;
+	}
 }
 
 /* SERVICES SECTION
@@ -390,13 +410,19 @@ section {
 .footer-sec{
 	width: 100%;
 	float: left;
-	background: #183600
+	background: #a4c2a8
 }
 .footer-sec h3{
-	color: #fff;
 	text-align: center;
-	color: #a4c2a8;
+	color: #047244;
 	/* font-weight: bold; */
+}
+
+.footer-sec p {
+	color: #fff;
+}
+.footer-sec li {
+	color: #fff;
 }
 .recommended-homes {
 	text-align: left;
@@ -414,7 +440,6 @@ section {
 	font-size:10px;
 	color: #fff;
 	text-align: center;
-	margin: 0 auto;
 	padding-top: 50px;
 }
 .line {
@@ -456,8 +481,8 @@ ul.social-network li {
 	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoInstagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoYouTube:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
