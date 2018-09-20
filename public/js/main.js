@@ -3,6 +3,27 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   $(this).ekkoLightbox()
 })
 
+// ease-in animation when element is within viewport
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+var elArray = ["hidden1", "hidden2", "hidden3"]
+
+window.setInterval(function () {
+  for (i in elArray) {
+    var el = $(`.${elArray[i]}`)
+    var isInView = el.isInViewport()
+    if (isInView && !el.hasClass("animated")) {
+      el.removeClass("hidden")
+      el.addClass("animated fadeInUp fadeIn")
+    }
+  }
+}, 120 / 1000);
 
 /*------- Smooth Scroll -------*/
 var photoArr = [
@@ -28,10 +49,10 @@ var photoArr = [
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
   }
 }
 
