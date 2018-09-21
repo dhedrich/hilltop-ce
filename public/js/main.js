@@ -21,6 +21,7 @@ window.setInterval(function () {
     if (isInView && !el.hasClass("animated")) {
       el.removeClass("hidden")
       el.addClass("animated fadeInUp fadeIn")
+      el.removeAttr("style")
     }
   }
 }, 120 / 1000);
