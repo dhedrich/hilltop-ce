@@ -77,7 +77,7 @@ app.get('/scrape', (req, res) => {
             var url = $(el).children('.blog-thumbnail-context').children('a').attr('href')
             var img = $(el).children('.blog-thumbnail-image').children('a').children('img').attr('src')
             var category = $(el).parent().attr('class')
-            category = category.slice(category.indexOf('category'), category.length)
+            category = category.slice(category.indexOf('category'))
             category = category.split(' ')[0]
             category = category.split('-')
             category.shift()
@@ -93,7 +93,7 @@ app.get('/scrape', (req, res) => {
             category = temp
             category = category.join(' ')
 
-            console.log(category)
+            // console.log(category)
 
             var newEntry = {}
             newEntry.headline = headline

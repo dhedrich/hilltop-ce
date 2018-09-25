@@ -32,12 +32,17 @@
 	display: block;
 }
 
+.category-container {
+    display: flex;
+    justify-content: center;
+}
+
 .card-img span {
     position: relative;
     float: left;
     /* top: 15%; */
     /* left: 10%; */
-    margin-left: 180px;
+    /* margin-left: 180px; */
     background: #a4c2a8;
     padding: 6px;
     color: #fff;
@@ -55,6 +60,8 @@
     padding:10px 5px;
     line-height: 0;
     color: #fff;
+    width: 150px;
+    text-align: center;
 }
 .card-desc {
 	padding: 1.25rem;
@@ -107,7 +114,7 @@
 a.btn-card {
     text-decoration: none;
     color: #fff;
-    width: 60%;
+    width: 100%;
 }
 
 .btn-container {

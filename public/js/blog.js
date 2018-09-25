@@ -17,7 +17,7 @@ var renderBlog = data => {
             <div class="card-content">
                 <div class="card-img">
                     <img src="https://alzheimers.net${data[entry].img}"/>
-                        <span><h4>${data[entry].category}</h4></span>
+                        <div class="category-container"><span><h4>${data[entry].category}</h4></span></div>
                             </div>
                     <div class="card-desc">
                         <h3>${data[entry].headline}</h3>
