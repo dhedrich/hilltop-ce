@@ -5,12 +5,12 @@ $(document).on('click', '[data-toggle="lightbox"]', function (event) {
 
 // ease-in animation when element is within viewport
 $.fn.isInViewport = function () {
-  var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
-  var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
-  return elementBottom > viewportTop && elementTop < viewportBottom;
-};
+  var elementTop = $(this).offset().top
+  var elementBottom = elementTop + $(this).outerHeight()
+  var viewportTop = $(window).scrollTop()
+  var viewportBottom = viewportTop + $(window).height()
+  return elementBottom > viewportTop && elementTop < viewportBottom
+}
 
 var elArray = ["hidden1", "hidden2", "hidden3"]
 
@@ -50,10 +50,10 @@ var photoArr = [
 
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
+    var j = Math.floor(Math.random() * (i + 1))
+    var temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
   }
 }
 
@@ -67,16 +67,16 @@ for (i in photoArr) {
 
 $('a[href^="#"]').on('click', function (event) {
 
-  var target = $($(this).attr('href'));
+  var target = $($(this).attr('href'))
 
   if (target.length) {
-    event.preventDefault();
+    event.preventDefault()
     $('html, body').animate({
       scrollTop: target.offset().top
-    }, 1000);
+    }, 1000)
   }
 
-});
+})
 
 /*------- Gallery Image Select -------*/
 $('.item').click(function () {
@@ -92,16 +92,6 @@ $('.item').click(function () {
 //   console.log("WORKING")
 //   console.log(data)
 // })
-
-$(document).ready(function () {
-
-  var postPromise = getPosts('hotpinksunrise')
-
-  postPromise.then(function (posts) {
-    console.log(posts)
-  })
-
-})
 
 
 /**
@@ -144,7 +134,7 @@ var swiper = new Swiper('.swiper-container', {
   speed: 2500,
   loop: true,
   autoplayDisableOnInteraction: false
-});
+})
 
 
 
@@ -163,7 +153,7 @@ var swiper = new Swiper('.swiper-container', {
 /* exported ScrollPosStyler */
 
 var ScrollPosStyler = (function (document, window) {
-  "use strict";
+  "use strict"
 
   /* ====================
    * private variables
@@ -186,29 +176,29 @@ var ScrollPosStyler = (function (document, window) {
     // ensure that events don't stack
     if (!busy) {
       // get current scroll position from window
-      scrollPosY = window.pageYOffset;
+      scrollPosY = window.pageYOffset
 
       // if we were above, and are now below scroll position...
       if (onTop && scrollPosY > scrollOffsetY) {
         // suspend accepting scroll events
-        busy = true;
+        busy = true
 
         // remember that we are below scroll position
-        onTop = false;
+        onTop = false
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(belowScrollPos);
+        window.requestAnimationFrame(belowScrollPos)
 
         // if we were below, and are now above scroll position...
       } else if (!onTop && scrollPosY <= scrollOffsetY) {
         // suspend accepting scroll events
-        busy = true;
+        busy = true
 
         // remember that we are above scroll position
-        onTop = true;
+        onTop = true
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(aboveScrollPos);
+        window.requestAnimationFrame(aboveScrollPos)
       }
     }
   }
@@ -222,12 +212,12 @@ var ScrollPosStyler = (function (document, window) {
     // for (var elem of elements) {
     for (var i = 0; elements[i]; ++i) { // chrome workaround
       // add style / class to element
-      elements[i].classList.add("sps--abv");
-      elements[i].classList.remove("sps--blw");
+      elements[i].classList.add("sps--abv")
+      elements[i].classList.remove("sps--blw")
     }
 
     // resume accepting scroll events
-    busy = false;
+    busy = false
   }
 
   /* ====================
@@ -238,12 +228,12 @@ var ScrollPosStyler = (function (document, window) {
     // for (var elem of elements) {
     for (var i = 0; elements[i]; ++i) { // chrome workaround
       // add style / class to element
-      elements[i].classList.add("sps--blw");
-      elements[i].classList.remove("sps--abv");
+      elements[i].classList.add("sps--blw")
+      elements[i].classList.remove("sps--abv")
     }
 
     // resume accepting scroll events
-    busy = false;
+    busy = false
   }
 
 
@@ -253,29 +243,29 @@ var ScrollPosStyler = (function (document, window) {
   var pub = {
     init: function () {
       // suspend accepting scroll events
-      busy = true;
+      busy = true
 
       // get current scroll position from window
-      scrollPosY = window.pageYOffset;
+      scrollPosY = window.pageYOffset
 
       // if we are below scroll position...
       if (scrollPosY > scrollOffsetY) {
         // remember that we are below scroll position
-        onTop = false;
+        onTop = false
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(belowScrollPos);
+        window.requestAnimationFrame(belowScrollPos)
 
         // if we are above scroll position...
       } else { // (scrollPosY <= scrollOffsetY)
         // remember that we are above scroll position
-        onTop = true;
+        onTop = true
 
         // asynchronuously add style / class to elements
-        window.requestAnimationFrame(aboveScrollPos);
+        window.requestAnimationFrame(aboveScrollPos)
       }
     }
-  };
+  }
 
 
   /* ====================
@@ -284,13 +274,13 @@ var ScrollPosStyler = (function (document, window) {
   // add initial style / class to elements when DOM is ready
   document.addEventListener("DOMContentLoaded", function () {
     // defer initialization to allow browser to restore scroll position
-    window.setTimeout(pub.init, 1);
-  });
+    window.setTimeout(pub.init, 1)
+  })
 
   // register for window scroll events
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll", onScroll)
 
 
-  return pub;
-})(document, window);
+  return pub
+})(document, window)
 
