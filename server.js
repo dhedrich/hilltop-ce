@@ -3,7 +3,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const hb = require('express-handlebars')
 const request = require('request')
-var cheerio = require('cheerio')
+const cheerio = require('cheerio')
 
 // initialize express parameters
 const app = express()
@@ -111,6 +111,13 @@ app.get('/scrape', (req, res) => {
         res.send(entryList)
     })
 })
+
+// const scraper = require('./igjs-master/igjs.js')
+
+// app.get('/insta', (req, res) => {
+//     let postPromise = getPosts('hotpinksunrise')       
+//     postPromise.then(posts => console.log(posts))
+// })
 
 app.listen(PORT, e => {
     if (e) throw e

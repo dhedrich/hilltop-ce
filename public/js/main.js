@@ -45,7 +45,8 @@ var photoArr = [
   // "hilltop1-2"
   "hilltop1-umbrella",
   "double-tree",
-  "sunset"
+  "sunset",
+  "umbrella"
 ]
 
 function shuffleArray(array) {
