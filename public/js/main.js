@@ -43,9 +43,9 @@ var photoArr = [
   "backyard-green",
   "hilltop1",
   // "hilltop1-2"
-  "hilltop1-umbrella",
-  "double-tree",
-  "sunset",
+  // "hilltop1-umbrella",
+  // "double-tree",
+  // "sunset",
   "umbrella",
   "twin-trees"
 ]
