@@ -5,10 +5,10 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 .separator {
-	height: 45px;
+	height: 0px;
 	width: 100%;
 	background: #a4c2a8;
-	border-bottom:18px solid #183600;
+	border-bottom: 8px solid #183600;
 }
 body {
 	color: #5a5a5a;
