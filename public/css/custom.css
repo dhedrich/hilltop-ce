@@ -10,9 +10,9 @@
 .row.section-content > div {
 	padding-left:0;
 	padding-right:0;
+	min-height: 390px;
 }
 .block-slogan {
-	height: 390px;
 	background: #a5c2a4;
 	padding:0px;
 	display: flex;
@@ -21,11 +21,10 @@
 .block-slogan-text {
 	color: #fff;
 	font-size:80px;
-	margin: 50px;
+	margin: 60px;
 }
 .about-us {
-	height: 390px;
-	background: #ffffff55;
+	background: #ffffff;
 }
 .about-us-text {
 	margin: 30px;
@@ -116,7 +115,7 @@ h1, h2, h3, h4, h5 {
 	color: #183600
 }
 .relative-box {
-	position: relative
+	position: relative;
 }
 section {
 	float: left;
@@ -129,7 +128,10 @@ section {
 }
 
 .section-content {
-	/* background: #a5c2a4; */
+	/* -webkit-box-shadow: 0px 12px 52px -17px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 12px 52px -17px rgba(0,0,0,0.75);
+	box-shadow: 0px 12px 52px -17px rgba(0,0,0,0.75); */
+	/* margin-bottom: 50px; */
 }
 .section-content h3{
 	padding: 0 21px;
@@ -290,6 +292,17 @@ a.navbar-brand.mx-auto {
 @media (max-width: 992px) {
 	a.navbar-brand.mx-auto {
 		font-size: 26px;
+	}
+	.block-slogan-text {
+		color: #fff;
+		font-size:80px;
+		margin: 50px;
+		text-align: center;
+	}
+	.row.section-content > div {
+		padding-left:0;
+		padding-right:0;
+		min-height: 300px;
 	}
 }
 @media (max-width: 767.5px) {

@@ -19,7 +19,7 @@ window.setInterval(function () {
     var el = $(`.${elArray[i]}`)
     var isInView = el.isInViewport()
     if (isInView && !el.hasClass("animated")) {
-      el.removeClass("hidden")
+      // el.removeClass(`${elArray[i]}`)
       el.addClass("animated fadeInUp fadeIn")
       el.removeAttr("style")
     }
@@ -28,27 +28,27 @@ window.setInterval(function () {
 
 /*------- Smooth Scroll -------*/
 var photoArr = [
-  "backyard-charms",
+  // "backyard-charms",
+  "umbrella",
+  "twin-trees",
   "branch",
   // "canopy",
-  "front-arch",
-  // "front-fence",
-  "front-porch",
-  "front-sun-tree",
-  "front-table",
-  "hanging-flower",
-  "lady-puppy",
-  // "landscape",
-  "backyard-house",
-  "backyard-green",
   "hilltop1",
+  "lady-puppy",
+  "backyard-house",
+  "front-porch",
+  // "front-fence",
+  // "front-sun-tree",
+  "sun-peeking",
+  "front-table",
+  "front-arch",
+  "hanging-flower"
+  // "landscape",
+  // "backyard-green",
   // "hilltop1-2"
   // "hilltop1-umbrella",
   // "double-tree",
   // "sunset",
-  "umbrella",
-  "twin-trees",
-  "sun-peeking"
 ]
 
 function shuffleArray(array) {
@@ -60,10 +60,11 @@ function shuffleArray(array) {
   }
 }
 
-shuffleArray(photoArr)
+// shuffleArray(photoArr)
 
 for (i in photoArr) {
-  $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"></a>`)
+  console.log(photoArr.length)
+  $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"/></a>`)
 }
 
 /*------- Smooth Scroll -------*/
