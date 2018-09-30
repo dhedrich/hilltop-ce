@@ -3,10 +3,10 @@
 
 .floater {
 	position: absolute;
-	top:62%;
+	top:32%;
 	bottom:0;
 	/* left:63%; */
-	right:59%;
+	left:59%;
 	width:50vw;
 	margin: auto;
 	-webkit-transform: scale(0.35); /* Saf3.1+, Chrome */
@@ -22,10 +22,12 @@
 /*Swiper*/
 .swiper-container {
 	/* width: 80%; */
-	/* border: 8px solid #183600; */
-	height: 89.5vh;
-	margin-top:10.5vh;
-	/* width: 50% */
+	/* border-bottom: 10px solid #fff; */
+	height: 90vh;
+	margin-top:30px;
+	/* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
+	z-index: 0;
+	width: 97%
 }
 @media (max-width: 767.5px) {
 	.swiper-container{

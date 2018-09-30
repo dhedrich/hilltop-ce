@@ -1,98 +1,74 @@
 <!-- Swiper Silder
 		================================================== -->
 <!-- Slider main container -->
-<div class="container">
-
-    <div class="swiper-container main-slider" id="myCarousel">
-        <img class="img-fluid floater" src="./img/Hilltop Logo Final.png" alt="">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slider-bg-position" style="background:url('./img/umbrella.jpg')" data-hash="slide3">
-                <!-- <h2>Feels like home</h2> -->
-                {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-            </div>
-            <div class="swiper-slide slider-bg-position" style="background:url('./img/twin-trees2.jpg')" data-hash="slide3">
-                <!-- <h2>Feels like home</h2> -->
-                {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-            </div>
-            <div class="swiper-slide slider-bg-position" style="background:url('./img/hanging-flower.jpg')" data-hash="slide3">
-                <!-- <h2>Feels like home</h2> -->
-                {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-            </div>
-            <div class="swiper-slide slider-bg-position" style="background:url('./img/branch.jpg')" data-hash="slide3">
-                <!-- <h2>Feels like home</h2> -->
-                {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-            </div>
+<div style="opacity:0;" class="swiper-container main-slider hidden2" id="myCarousel">
+    <img class="img-fluid floater" src="./img/Hilltop Logo Final.png" alt="">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slider-bg-position" style="background:url('./img/umbrella.jpg')" data-hash="slide3">
+            <!-- <h2>Feels like home</h2> -->
+            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-prev">
-            <i class="fa fa-chevron-left"></i>
+        <div class="swiper-slide slider-bg-position" style="background:url('./img/twin-trees2.jpg')" data-hash="slide3">
+            <!-- <h2>Feels like home</h2> -->
+            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
         </div>
-        <div class="swiper-button-next">
-            <i class="fa fa-chevron-right"></i>
+        <div class="swiper-slide slider-bg-position" style="background:url('./img/hanging-flower.jpg')" data-hash="slide3">
+            <!-- <h2>Feels like home</h2> -->
+            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
+        </div>
+        <div class="swiper-slide slider-bg-position" style="background:url('./img/branch.jpg')" data-hash="slide3">
+            <!-- <h2>Feels like home</h2> -->
+            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
         </div>
     </div>
-
-
-    {{!-- <div class="separator"></div> --}}
+    <!-- Add Pagination -->
+    {{!-- <div class="swiper-pagination"></div> --}}
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev">
+        <i class="fa fa-chevron-left"></i>
+    </div>
+    <div class="swiper-button-next">
+        <i class="fa fa-chevron-right"></i>
+    </div>
 </div>
+
+{{!-- overlapping text box --}}
+<div class="container hidden4">
+    <div class="row">
+        <div class="col-md-4 overlap" style="background: #a5c2a4;">
+            <h3>Our Compassion Sets Us Apart</h3>
+        </div>
+    </div>
+</div>
+
+
+{{!-- <div class="separator"></div> --}}
 <!-- Services
     ================================================== -->
 <section class="service-sec" id="services">
-    <div class="container hidden2" style="opacity:0;">
 
+
+
+    <div class="container hidden2 overlap2" style="opacity:0;">
         <div class="row section-content">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card mb-4 bg-dark text-white">
-                    <div style:"background: black;">
+                    <div class="" style="background: black;">
                         <img style="opacity:0.7;" class="card-img" src="./img/branch.jpg" alt="Card image">
                     </div>
                     <div class="card-img-overlay">
-                        <h3 class="card-title" style="color: white; font-size:36px; padding-top: 18px;">Our Mission</h5>
-                            <p class="card-text">Our goal has always been very simple: to bring back as much quality to
-                                the
-                                lives of the
-                                elderly
-                                whom we serve. With many years in operation, we take pride and joy in knowing that we
-                                are able
-                                to
-                                serve and serve well.
-                                <br>
-                                Hilltop Country Estate is a private 10 bed residential care facility for
-                                the elderly,
-                                licensed
-                                by
-                                the State of California. We are fully committed to serving the elderly who are frail
-                                with
-                                physical
-                                limitations and also those who may be suffering from mild to moderate dementia. We
-                                provide 24
-                                hour
-                                personal care and close supervision in a private and serene homelike setting. We
-                                provide
-                                assistance
-                                and services to ambulatory and non-ambulatory resident including those needing
-                                wheelchair
-                                accessibility.</p>
-                    </div>
-                </div>
-                {{!-- <div class="card-content">
-                    <div class="card-img">
-                        <img src="./img/sun-peeking.jpg" />
-                    </div>
-                    <div class="card-desc">
-                        <h3>About Hilltop Country Estate</h3>
-                        <p>
-                            Our goal has always been very simple: to bring back as much quality to the lives of the
+                        <h3 class="card-title" style="color: white; font-size:36px; padding-top: 18px;">Our Mission</h3>
+                        {{!-- <p class="card-text">Our goal has always been very simple: to bring back as much quality to
+                            the
+                            lives of the
                             elderly
                             whom we serve. With many years in operation, we take pride and joy in knowing that we
                             are able
                             to
                             serve and serve well.
-                        </p>
-                        <p>
-                            Hilltop Country Estate is a private 10 bed residential care facility for the elderly,
+                            <br>
+                            Hilltop Country Estate is a private 10 bed residential care facility for
+                            the elderly,
                             licensed
                             by
                             the State of California. We are fully committed to serving the elderly who are frail
@@ -106,21 +82,15 @@
                             assistance
                             and services to ambulatory and non-ambulatory resident including those needing
                             wheelchair
-                            accessibility.
-                        </p>
-                        <div class="btn-container">
-                            <a href="/AIBC" class="btn-card">See our services</a>
-                        </div>
+                            accessibility.</p> --}}
                     </div>
-                </div> --}}
-            </div>
-
-            <div class="col-md-4">
-                <div class="blog-entries"></div>
+                </div>
             </div>
         </div>
+
+
         <div class="row section-content">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <div class="card-content">
                     {{!-- <div class="card-img">
                         <img src="./img/sun-peeking.jpg" />
@@ -140,6 +110,10 @@
                     <div class="btn-container">
                         <a href="/reviews" class="btn-card">See all reviews</a>
                     </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-entries">
                 </div>
             </div>
         </div>

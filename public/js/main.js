@@ -12,7 +12,7 @@ $.fn.isInViewport = function () {
   return elementBottom > viewportTop && elementTop < viewportBottom
 }
 
-var elArray = ["hidden1", "hidden2", "hidden3"]
+var elArray = ["hidden1", "hidden2", "hidden3", "hidden4"]
 
 window.setInterval(function () {
   for (i in elArray) {
