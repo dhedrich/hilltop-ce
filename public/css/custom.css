@@ -30,11 +30,28 @@
 	margin: 30px;
 }
 .about-us-text p {
-	line-height: 42px;
+	line-height: 39px;
+}
+.about-us-text a {
+	position: absolute;
+	right:    0;
+	bottom:   0;
 }
 
 .about-us h3 {
 	font-size: 32px;
+}
+.testimonial-preview {
+	min-height: 300px;
+}
+.btn-reviews {
+	position: absolute;
+	left:    0;
+	bottom:   0;
+	/* margin-top: 20px; */
+}
+.blog-preview {
+	min-height: 390px;
 }
 .overlap {
 	position: absolute;
@@ -335,14 +352,17 @@ a.navbar-brand.mx-auto {
 	font-size: 22px;
 	margin-bottom: 18px;
 }
-.service-sec i {
+/* .service-sec i {
 	border: 1px solid #183600;
 	border-radius: 2px;
 	font-size: 25px;
 	padding: 12px 0;
 	width: 52px;
 	color: #183600;
-	margin-bottom: 20px
+	margin-bottom: 20px */
+}
+.fa-arrow-right {
+	font-weight: lighter;
 }
 .service-sec h3 {
 	/* font-size: 23px; */

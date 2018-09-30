@@ -28,27 +28,27 @@ window.setInterval(function () {
 
 /*------- Smooth Scroll -------*/
 var photoArr = [
-  // "backyard-charms",
-  "umbrella",
-  "twin-trees",
-  "branch",
   // "canopy",
-  "hilltop1",
-  "lady-puppy",
-  "backyard-house",
-  "front-porch",
   // "front-fence",
   // "front-sun-tree",
-  "sun-peeking",
-  "front-table",
-  "front-arch",
-  "hanging-flower"
+  // "backyard-charms",
   // "landscape",
   // "backyard-green",
   // "hilltop1-2"
   // "hilltop1-umbrella",
   // "double-tree",
   // "sunset",
+  "umbrella",
+  "twin-trees",
+  "branch",
+  "hilltop1",
+  "lady-puppy",
+  "backyard-house",
+  "front-porch",
+  "sun-peeking",
+  "front-table",
+  "front-arch",
+  "hanging-flower"
 ]
 
 function shuffleArray(array) {
