@@ -4,16 +4,42 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+.row {
+	margin:0;
+}
+.row.section-content > div {
+	padding-left:0;
+	padding-right:0;
+}
+.block-slogan {
+	height: 390px;
+	background: #a5c2a4;
+	padding:0px;
+	display: flex;
+
+}
+.block-slogan-text {
+	color: #fff;
+	font-size:80px;
+	margin: 50px;
+}
+.about-us {
+	height: 390px;
+	background: #ffffff55;
+}
+.about-us-text {
+	margin: 30px;
+}
+.about-us-text p {
+	line-height: 42px;
+}
+
+.about-us h3 {
+	font-size: 32px;
+}
 .overlap {
 	position: absolute;
 	bottom: 100px;
-	/* -webkit-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
-	-moz-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
-	box-shadow: 10px 10px 0px 0px rgba(255,255,255,1); */
-}
-.overlap2 {
-	position: relative;
-	bottom: 150px;
 	/* -webkit-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
 	-moz-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
 	box-shadow: 10px 10px 0px 0px rgba(255,255,255,1); */
@@ -23,8 +49,13 @@
 	-moz-box-shadow: 10px 10px 0px 0px rgb(165,194,164);
 	box-shadow: 10px 10px 0px 0px rgb(165,194,164);
 }
-.container {
-	width:90vw;
+.container-fluid {
+	/* width: 9vw; */
+	/* background: #fffee8; */
+}
+.border-light{
+	border-right: 1px solid rgb(167, 167, 167);
+	border-left: 1px solid rgb(167, 167, 167);
 }
 .separator {
 	height: 0px;
@@ -90,12 +121,15 @@ h1, h2, h3, h4, h5 {
 section {
 	float: left;
 	width: 100%;
-	padding: 60px 0;
 }
 .section-heading {
 	margin-bottom: 70px;
 	display: flex;
 	align-items: center;
+}
+
+.section-content {
+	/* background: #a5c2a4; */
 }
 .section-content h3{
 	padding: 0 21px;
@@ -135,11 +169,6 @@ section {
 }
 .obvi-link {
 	text-decoration: underline;
-}
-section {
-	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29);
-	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29);
-	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.29);
 }
 /* .hidden1, .hidden2, .hidden3, {
 	opacity: 0;
@@ -233,7 +262,7 @@ section {
 }
 
 .dropdown-menu {
-	background: #f5fff5;
+	background: #fffee8;
 }
 .dropdown-item:hover {
 	transition: 0.2s;
@@ -284,8 +313,8 @@ a.navbar-brand.mx-auto {
 	display: block;
 	text-transform: capitalize;
 	font-weight: 600;
-	color: #a5c2a4;
-	font-size: 32px;
+	/* color: #a5c2a4; */
+	/* font-size: 32px; */
 }
 .service-sec h2 small {
 	color: #222;
@@ -303,13 +332,13 @@ a.navbar-brand.mx-auto {
 	margin-bottom: 20px
 }
 .service-sec h3 {
-	font-size: 23px;
+	/* font-size: 23px; */
 	font-weight: 600;
 	color: #183600;
 }
 .service-sec p {
-	line-height: 26px;
-	margin: 32px 0;
+	/* line-height: 26px; */
+	/* margin: 32px 0; */
 	padding: 0 21px;
 }
 .service-sec .service-block {

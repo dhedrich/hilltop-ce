@@ -1,94 +1,75 @@
 <!-- Swiper Silder
 		================================================== -->
 <!-- Slider main container -->
-<div style="opacity:0;" class="swiper-container main-slider hidden2" id="myCarousel">
-    <img class="img-fluid floater" src="./img/Hilltop Logo Final.png" alt="">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/umbrella.jpg')" data-hash="slide3">
-            <!-- <h2>Feels like home</h2> -->
-            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/twin-trees2.jpg')" data-hash="slide3">
-            <!-- <h2>Feels like home</h2> -->
-            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/hanging-flower.jpg')" data-hash="slide3">
-            <!-- <h2>Feels like home</h2> -->
-            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('./img/branch.jpg')" data-hash="slide3">
-            <!-- <h2>Feels like home</h2> -->
-            {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
+<section class="carousel-sec" id="carousel">
+    <div class="container-fluid hidden2" style="opacity:0;">
+        <div class="swiper-container main-slider hidden2" id="myCarousel">
+            <img class="img-fluid floater" src="./img/Hilltop Logo Final.png" alt="">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/umbrella.jpg')" data-hash="slide3">
+                    <!-- <h2>Feels like home</h2> -->
+                    {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/twin-trees2.jpg')" data-hash="slide3">
+                    <!-- <h2>Feels like home</h2> -->
+                    {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/hanging-flower.jpg')"
+                    data-hash="slide3">
+                    <!-- <h2>Feels like home</h2> -->
+                    {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
+                </div>
+                <div class="swiper-slide slider-bg-position" style="background:url('./img/branch.jpg')" data-hash="slide3">
+                    <!-- <h2>Feels like home</h2> -->
+                    {{!-- <h3>An expansive natural getaway<br> to soothe the soul</h3> --}}
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            {{!-- <div class="swiper-pagination"></div> --}}
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa fa-chevron-right"></i>
+            </div>
         </div>
     </div>
-    <!-- Add Pagination -->
-    {{!-- <div class="swiper-pagination"></div> --}}
-    <!-- Add Navigation -->
-    <div class="swiper-button-prev">
-        <i class="fa fa-chevron-left"></i>
-    </div>
-    <div class="swiper-button-next">
-        <i class="fa fa-chevron-right"></i>
-    </div>
-</div>
-
+</section>
 {{!-- overlapping text box --}}
-<div class="container hidden4">
+{{!-- <div class="container hidden4">
     <div class="row">
         <div class="col-md-4 overlap" style="background: #a5c2a4;">
             <h3>Our Compassion Sets Us Apart</h3>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 {{!-- <div class="separator"></div> --}}
 <!-- Services
     ================================================== -->
 <section class="service-sec" id="services">
-
-
-
-    <div class="container hidden2 overlap2" style="opacity:0;">
+    <div class="container-fluid hidden3" style="opacity:0;">
         <div class="row section-content">
-            <div class="col-md-12">
-                <div class="card mb-4 bg-dark text-white">
-                    <div class="" style="background: black;">
-                        <img style="opacity:0.7;" class="card-img" src="./img/branch.jpg" alt="Card image">
-                    </div>
-                    <div class="card-img-overlay">
-                        <h3 class="card-title" style="color: white; font-size:36px; padding-top: 18px;">Our Mission</h3>
-                        {{!-- <p class="card-text">Our goal has always been very simple: to bring back as much quality to
-                            the
-                            lives of the
-                            elderly
-                            whom we serve. With many years in operation, we take pride and joy in knowing that we
-                            are able
-                            to
-                            serve and serve well.
-                            <br>
-                            Hilltop Country Estate is a private 10 bed residential care facility for
-                            the elderly,
-                            licensed
-                            by
-                            the State of California. We are fully committed to serving the elderly who are frail
-                            with
-                            physical
-                            limitations and also those who may be suffering from mild to moderate dementia. We
-                            provide 24
-                            hour
-                            personal care and close supervision in a private and serene homelike setting. We
-                            provide
-                            assistance
-                            and services to ambulatory and non-ambulatory resident including those needing
-                            wheelchair
-                            accessibility.</p> --}}
-                    </div>
+            <div class="col-md-6 block-slogan">
+                <h2 class="block-slogan-text">BOUTIQUE MEMORY CARE</h2>
+            </div>
+            <div class="col-md-6 about-us">
+                <div class="about-us-text">
+                    <h3>Our Compassion Sets Us Apart</h3>
+                    <hr>
+                    <p>At Hilltop Country Estate, we pride ourselves on caring for your loved ones like they are our
+                        own family. We work hard to provide luxury care at an affordable price. Located in the serene
+                        Escondido community of Hidden Meadows, Hilltop Country Estate sits upon 10 acres of beautiful
+                        landscape, fruit trees, and views of the valley and mountains. Call us today for a personal
+                        tour or for more information about our services.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-
+    <div class="container-fluid hidden4" style="opacity:0;">
         <div class="row section-content">
             <div class="col-md-8">
                 <div class="card-content">
@@ -96,8 +77,8 @@
                         <img src="./img/sun-peeking.jpg" />
                     </div> --}}
                     <div class="card-desc" style="padding: 0px;">
-                        <blockquote class="quote-card green-card snip-1">
-                            <p class="snip-1" style="color: white;">
+                        <blockquote class="quote-card white-card snip-1">
+                            <p class="snip-1">
                                 I highly recommend Hilltop Country Estate if you need personalized care for
                                 your loved one. You
                                 and
