@@ -35,3 +35,37 @@ var renderBlog = data => {
     $('.blog-entries').append(payload)
 
 }
+
+var photoArr = [
+    "umbrella",
+    "twin-trees",
+    "branch",
+    "hilltop1",
+    "lady-puppy",
+    "backyard-house",
+    "front-porch",
+    "sun-peeking",
+    "front-table",
+    "front-arch",
+    "hanging-flower",
+    "back-landscape"
+]
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1))
+        var temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+    }
+}
+
+shuffleArray(photoArr)
+
+for (i in photoArr) {
+    if (i == 0) {
+        $(".carousel-inner").append(`<div class="carousel-item active"><img class="d-block w-100" src="./img/${photoArr[i]}.jpg" alt="First slide"></div>`)
+    } else {
+        $(".carousel-inner").append(`<div class="carousel-item"><img class="d-block w-100" src="./img/${photoArr[i]}.jpg" alt="First slide"></div>`)
+    }
+}

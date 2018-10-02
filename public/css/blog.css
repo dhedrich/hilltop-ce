@@ -91,7 +91,7 @@
 	margin: 0px;
 	margin-bottom: 20px;
 	padding: 0;
-	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Raleway', sans-serif; */
 }
 .btn-card, .btn-services, .btn-reviews{
 	background-color: #a5c2a4;

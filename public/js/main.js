@@ -48,7 +48,8 @@ var photoArr = [
   "sun-peeking",
   "front-table",
   "front-arch",
-  "hanging-flower"
+  "hanging-flower",
+  "back-landscape"
 ]
 
 function shuffleArray(array) {
@@ -63,7 +64,6 @@ function shuffleArray(array) {
 // shuffleArray(photoArr)
 
 for (i in photoArr) {
-  console.log(photoArr.length)
   $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"/></a>`)
 }
 
