@@ -16,6 +16,8 @@
     "express-handlebars": "^3.0.0",
     "insta-scraper": "^1.0.2",
     "instagram-scraper": "^1.0.6",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.2.0",
     "request": "^2.88.0"
   }
 }

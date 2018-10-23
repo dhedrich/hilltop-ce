@@ -33,7 +33,33 @@ var renderBlog = data => {
     }
     $('.blog-entries').empty()
     $('.blog-entries').append(payload)
+}
 
+// get instagram posts
+$.ajax({
+    url: "/insta",
+    method: "GET",
+}).done(data => {
+    renderPosts(data)
+    console.log(data)
+}).error(error => {
+    console.log("Error: posts not found")
+})
+
+var renderPosts = data => {
+    // for (var i = 0; i < 4; i++) {
+    //     if (i == 0) {
+    //         $(".carousel-inner").append(`<div class="carousel-item active"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
+    //     } else {
+    //         $(".carousel-inner").append(`<div class="carousel-item"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
+    //     }
+    //"" }  
+    for (var i = 0; i < 6; i++) {
+        $(".insta-feed").append(`<span><img src="${data[i].thumbnails.lg}"/></span>`)
+    }
+    for (var i = 0; i < 4; i++) {
+        $(".insta-feed").append(`<span><img src="${data[i].thumbnails.lg}"/></span>`)
+    }
 }
 
 var photoArr = [
@@ -51,21 +77,10 @@ var photoArr = [
     "back-landscape"
 ]
 
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1))
-        var temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
-    }
-}
-
-shuffleArray(photoArr)
-
 for (i in photoArr) {
     if (i == 0) {
-        $(".carousel-inner").append(`<div class="carousel-item active"><img class="d-block w-100" src="./img/${photoArr[i]}.jpg" alt="First slide"></div>`)
+        $(".carousel-inner").append(`<div class="carousel-item active"><img class="home-carousel d-block w-100" src="./img/${photoArr[i]}.jpg" alt="First slide"><div class="carousel-caption d-none d-md-block"><h5><a class="hover-caption home-carousel-caption" href="/gallery">View Photo Gallery</a></h5></div></div>`)
     } else {
-        $(".carousel-inner").append(`<div class="carousel-item"><img class="d-block w-100" src="./img/${photoArr[i]}.jpg" alt="First slide"></div>`)
+        $(".carousel-inner").append(`<div class="carousel-item"><img class="home-carousel d-block w-100" src="./img/${photoArr[i]}.jpg" alt="First slide"><div class="carousel-caption d-none d-md-block"><h5><a class="hover-caption home-carousel-caption" href="/gallery">View Photo Gallery</a></h5></div></div>`)
     }
 }

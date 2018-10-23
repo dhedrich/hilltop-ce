@@ -5,8 +5,60 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-.carousel-inner {
-	max-height: 222px;
+#slider-container {
+		height: 404px;
+		width: 100vw;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	.slider {
+		position: absolute;
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.slider-instant {
+		transition: none;
+	}
+	.slider-animate {
+		margin-left: 0;
+	}
+	.slider-extra {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.slider-last {
+		min-width: 100vw;
+		max-width: 100vw;
+		overflow: hidden;
+	}
+	.slider span {
+		margin-right: 30px;
+	}
+	.slider .slider-extra {
+		margin-right: 0;
+	}
+	.slider img {
+		height: inherit;
+		vertical-align: inherit;
+		border: inherit;
+		width: auto;
+		height: auto;
+		max-width: 400px; 
+	    max-height: 400px;
+	}
+.home-carousel-caption {
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s;
+}
+.home-carousel-caption:hover {
+	transition: 0.2s;
+	color: #a5c2a4;
+}
+.carousel-item .home-carousel {
+	height: 222px;
 }
 .row {
 	margin:0;
@@ -14,7 +66,7 @@
 .row.section-content > div {
 	padding-left:0;
 	padding-right:0;
-	min-height: 390px;
+	/* min-height: 390px; */
 }
 .block-slogan {
 	background: #a5c2a4;
@@ -89,6 +141,7 @@ body {
 	background-color: #fffee8;
 	background: url(../img/light-veneer.png);
 	background-attachment: fixed;
+	
 	/* font-family: 'Overlock', sans-serif; */
 }
 a.navbar-brand {
@@ -199,9 +252,84 @@ section {
 /* .hidden1, .hidden2, .hidden3, {
 	opacity: 0;
 } */
+
+/* Instagram Slider 
+...................................................*/
+.insta-feed {
+	height: 240px;
+	width: 3550px;
+	/* margin-bottom: 80px; */
+	/* display: inline-block; */
+}
+
+.insta-feed img {
+	height: 100%;
+}
+
+.hidden6 {
+	overflow: hidden;
+}
+
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+		-ms-animation: bannermove 30s linear infinite;
+		 -o-animation: bannermove 30s linear infinite;
+			animation: bannermove 30s linear infinite;
+   }
+	
+   @keyframes "bannermove" {
+	0% {
+	   margin-left: 0px;
+	}
+	100% {
+	   margin-left: -2125px;
+	}
+	
+   }
+	
+   @-moz-keyframes bannermove {
+	0% {
+	  margin-left: 0px;
+	}
+	100% {
+	  margin-left: -2125px;
+	}
+	
+   }
+	
+   @-webkit-keyframes "bannermove" {
+	0% {
+	  margin-left: 0px;
+	}
+	100% {
+	  margin-left: -2125px;
+	}
+	
+   }
+	
+   @-ms-keyframes "bannermove" {
+	0% {
+	  margin-left: 0px;
+	}
+	100% {
+	  margin-left: -2125px;
+	}
+	
+   }
+	
+   @-o-keyframes "bannermove" {
+	0% {
+	  margin-left: 0px;
+	}
+	100% {
+	  margin-left: -2125px;
+	}
+	
+   }
+
 /* TOP HEADER
 -------------------------------------------------- */
-
 
 .navbar.top-bar {
 	border-radius: 0;
@@ -341,6 +469,9 @@ a.navbar-brand.mx-auto {
 	}
 	.carousel-inner {
 		max-height: auto;
+	}
+	.carousel-item .home-carousel {
+		height: auto;
 	}
 }
 

@@ -108,16 +108,17 @@ app.get('/scrape', (req, res) => {
         })
 
         // console.log(entryList)
-        res.send(entryList.slice(0,9))
+        res.send(entryList.slice(0, 9))
     })
 })
 
-// const scraper = require('./igjs-master/igjs.js')
+const scraper = require('./igjs-master/igjs')
 
-// app.get('/insta', (req, res) => {
-//     let postPromise = getPosts('hotpinksunrise')       
-//     postPromise.then(posts => console.log(posts))
-// })
+app.get('/insta', (req, res) => {
+    let postPromise = scraper.getPosts('verveseniorliving')
+    postPromise.then(posts => res.send(posts))
+    })
+
 
 app.listen(PORT, e => {
     if (e) throw e
