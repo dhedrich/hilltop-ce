@@ -159,6 +159,10 @@
     transition: 0.2s;
 }
 
-.carousel-inner {
+.carousel-inner, .carousel-inner2 {
     background: #000;
+}
+
+.other-homes {
+    margin-top: 28px;
 }

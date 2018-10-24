@@ -1,67 +1,139 @@
 <!-- Basic Care
     ================================================== -->
 <section class="service-sec first-sec" id="services">
-    <div class="container hidden2" style="opacity:0;">
-        <div class="row section-heading">
-            <div class="col-md-8">
-                <div class="heading">
-                    <h2>Special Care Services</h2>
+    <div class="container-fluid hidden4" style="opacity:0;">
+        <div class="row section-content slogan-content3">
+
+            {{!-- <div class="about-us-bg"></div> --}}
+            <div class="col-lg-6 block-slogan">
+                {{!-- <h2 class="block-slogan-text">YOUR BEST LIFE</h2> --}}
+            </div>
+            <div class="col-lg-5 about-us">
+                <div class="about-us-text">
+                    <h3>Special Services</h3>
                     <hr>
-                    <p>Conditions that require special care and supervision in addition to their current level of care</p>
+                    <p>At Hilltop Country Estate, we pride ourselves on caring for your loved ones like they are our
+                        own family. We work hard to provide luxury care at an affordable price. Located in the serene
+                        Escondido community of Hidden Meadows, Hilltop Country Estate sits upon 10 acres of beautiful
+                        landscape, fruit trees, and views of the valley and mountains. Call us today for a personal
+                        tour or for more information about our services.</p>
+                    <a href="#scroll-target" class="btn-services scroll-to">SEE MORE&nbsp;&nbsp;<i class="fa fa-angle-down"></i></a>
                 </div>
             </div>
-            <div class="col-md-4 section-heading-img">
-                <img class="img-fluid service-logo" src="./img/Main Logo PNG.png" alt="">
-            </div>
         </div>
-        <div class="row section-content">
-            <div class="col-md-4">
-                <h3>Direct Care, Assistance and Monitoring</h3>
-                <ul>
-                    <li>
-                        Conditions that require special care and supervision in addition to their current level of care
-                    </li>
-                    <li>
-                        State Licensing exemption rules required*
-                    </li>
-                    <li>
-                        Gastrostomy*
-                    </li>
-                    <li>
-                        Wound Care (Stage 3 or 4)*
-                    </li>
-                    <li>
-                        Diabetic/Insulin Care*
-                    </li>
-                    <li>
-                        Bedbound or Bedridden
-                    </li>
-                    <li>
-                        Wheelchair-bound with 2-person transfer
-                    </li>
-                    <li>
-                        Mechanical transfer (hoyer lift)
-                    </li>
-                    <li>
-                        Catheter Care
-                    </li>
-                    <li>
-                        Oxygen
-                    </li>
-                    <li>
-                        Special behavioral issues ( Combative, physically aggressive, wandering, pacing ..)
-                    </li>
-                    <li>
-                        Other conditions ...
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <img class="img-fluid gallery-pic" src="./img/lady-puppy.jpg" alt="#">
-            </div>
-        </div>
-        <p>
-            <small>*State Licensing Exemption Rules Required</small>
-        </p>
     </div>
+
+    <div class="container-fluid hidden2" style="opacity:0;">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <a class="btn btn-link" id="scroll-target" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Direct Care, Assistance and Monitoring
+                        </a>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                Conditions that require special care and supervision in addition to their current
+                                level of care
+                            </li>
+                            <li>
+                                State Licensing exemption rules required*
+                            </li>
+                            <li>
+                                Gastrostomy*
+                            </li>
+                            <li>
+                                Wound Care (Stage 3 or 4)*
+                            </li>
+                            <li>
+                                Diabetic/Insulin Care*
+                            </li>
+                            <li>
+                                Bedbound or Bedridden
+                            </li>
+                            <li>
+                                Wheelchair-bound with 2-person transfer
+                            </li>
+                            <li>
+                                Mechanical transfer (hoyer lift)
+                            </li>
+                            <li>
+                                Catheter Care
+                            </li>
+                            <li>
+                                Oxygen
+                            </li>
+                            <li>
+                                Special behavioral issues ( Combative, physically aggressive, wandering, pacing ..)
+                            </li>
+                            <li>
+                                Other conditions ...
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <small>*State Licensing Exemption Rules Required</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- <div class="row section-content">
+        <div class="col-md-4">
+            <h3>Direct Care, Assistance and Monitoring</h3>
+            <ul>
+                <li>
+                    Conditions that require special care and supervision in addition to their current level of care
+                </li>
+                <li>
+                    State Licensing exemption rules required*
+                </li>
+                <li>
+                    Gastrostomy*
+                </li>
+                <li>
+                    Wound Care (Stage 3 or 4)*
+                </li>
+                <li>
+                    Diabetic/Insulin Care*
+                </li>
+                <li>
+                    Bedbound or Bedridden
+                </li>
+                <li>
+                    Wheelchair-bound with 2-person transfer
+                </li>
+                <li>
+                    Mechanical transfer (hoyer lift)
+                </li>
+                <li>
+                    Catheter Care
+                </li>
+                <li>
+                    Oxygen
+                </li>
+                <li>
+                    Special behavioral issues ( Combative, physically aggressive, wandering, pacing ..)
+                </li>
+                <li>
+                    Other conditions ...
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <img class="img-fluid gallery-pic" src="./img/lady-puppy.jpg" alt="#">
+        </div>
+        <div>
+            <p>
+                <small>*State Licensing Exemption Rules Required</small>
+            </p>
+        </div>
+    </div> --}}
 </section>

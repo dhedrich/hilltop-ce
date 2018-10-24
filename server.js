@@ -117,7 +117,7 @@ const scraper = require('./igjs-master/igjs')
 app.get('/insta', (req, res) => {
     let postPromise = scraper.getPosts('verveseniorliving')
     postPromise.then(posts => res.send(posts))
-    })
+})
 
 
 app.listen(PORT, e => {

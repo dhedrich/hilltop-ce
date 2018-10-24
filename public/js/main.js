@@ -26,6 +26,20 @@ window.setInterval(function () {
   }
 }, 120 / 1000);
 
+/*------- Scroll To Button -------*/
+jQuery('.scroll-to').click(function(e){
+	var jump = $(this).attr('href');
+  var new_position = $(jump).offset();
+  console.log(new_position.top)
+  $('html').stop().animate({ scrollTop: new_position.top - 58 }, 500);
+  $(jump).toggleClass('show').attr('aria-expanded', 'true')
+  // if ($('#scroll-target').hasClass("collapsed")) {
+  //   $('#scroll-target').toggleClass("collapsed")
+  // }
+	e.preventDefault();
+});
+
+
 /*------- Smooth Scroll -------*/
 var photoArr = [
   // "canopy",

@@ -1,13 +1,16 @@
 /*--------Blog Cards--------*/
+.blog-entries { 
+    margin-top: 20px;
+}
+
 .details-card {
     background: #ecf0f1;
-    
 }
 
 .card-content {
 	background: #ffffff;
 	border: 4px;
-    /* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     margin-bottom:45px;
     transition: 200ms;
 }
@@ -94,7 +97,6 @@
 	/* font-family: 'Raleway', sans-serif; */
 }
 .btn-card, .btn-services, .btn-reviews{
-	background-color: #a5c2a4;
 	/* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
     padding: .74rem 1.44rem;
     font-size: 18px;
@@ -114,8 +116,18 @@
     text-decoration: none;
     color: #fff;
 }
-.btn-card:hover, .btn-services:hover, .btn-reviews:hover {
+.btn-services {
+    background-color: #144d24; 
+}
+.btn-card, .btn-reviews {
+	background-color: #a5c2a4;
+}
+.btn-card:hover, .btn-reviews:hover {
     background: #144d24;
+    color: #fff;
+}
+.btn-services:hover {
+    background: #a5c2a4;
     color: #fff;
 }
 a.btn-card {
