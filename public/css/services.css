@@ -1,6 +1,30 @@
 .btn-link {
   font-size: 24px;
 }
+.btn-services-next {
+  float: right;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  width: 100%!important;
+  margin:0 0 50px 0;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.prev-correct {
+  padding-left: 0;
+}
+
+.btn-services-prev {
+  float: left;
+  text-transform: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  width: 100%!important;
+  margin:0 0 50px 0;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
 .card-body li {
   line-height: 2.6em;
 }
@@ -8,6 +32,9 @@
   .btn-link {
     font-size: 16px;
   }
+}
+#accordionExample li {
+  font-size: 18px;
 }
 #accordionExample {
   margin-bottom: 50px;
@@ -112,3 +139,88 @@
     transform: rotate(-135deg);
     transition: all 0.2s ease-in;
   }
+
+/* pricing table format */
+    ul li {
+      margin-bottom:1.4rem;
+    }
+    .pricing-divider {
+    border-radius: 20px;
+    background: #C64545;
+    padding: 1em 0 4em;
+    position: relative;
+    }
+    .blue .pricing-divider{
+    background: #a5c2a4; 
+    }
+    .green .pricing-divider {
+    background: #144d24; 
+    }
+    .red b {
+      color:#C64545
+    }
+    .blue b {
+      color:#a5c2a4
+    }
+    .green b {
+      color:#144d24
+    }
+    .pricing-divider-img {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 80px;
+    }
+    .btn-custom1 {
+      background: #a5c2a4;
+      transition: 0.2s;
+      border: 2px solid #a5c2a4;
+    }
+    .btn-custom2 {
+      color: #fff;
+      background: #144d24;
+      transition: 0.2s;
+      border: 2px solid #144d24;
+    }
+    .btn-custom1:hover, .btn-custom2:hover {
+      transition: 0.2s;
+      background: #fff;
+      color: #000;
+    }
+    .deco-layer {
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+    }
+    
+    .img-float {
+      width:50px; position:absolute;top:-3.5rem;right:1rem
+    }
+    
+    .princing-item {
+      transition: all 150ms ease-out;
+    }
+    .princing-item:hover {
+      transform: scale(1.05);
+    }
+    .princing-item:hover .deco-layer--1 {
+      -webkit-transform: translate3d(15px, 0, 0);
+      transform: translate3d(15px, 0, 0);
+    }
+    .princing-item:hover .deco-layer--2 {
+      -webkit-transform: translate3d(-15px, 0, 0);
+      transform: translate3d(-15px, 0, 0);
+    }
+    
+    
+
+    .fine-print {
+      display: inline-block;
+      float: right;
+      text-align: right;
+    }
+    .fine-print p {
+      text-align: right;
+      line-height:12px;
+    }
+    

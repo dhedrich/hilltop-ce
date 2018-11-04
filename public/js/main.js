@@ -29,10 +29,10 @@ window.setInterval(function () {
 /*------- Scroll To Button -------*/
 jQuery('.scroll-to').click(function(e){
 	var jump = $(this).attr('href');
-  var new_position = $(jump).offset();
-  console.log(new_position.top)
-  $('html').stop().animate({ scrollTop: new_position.top - 58 }, 500);
-  $(jump).toggleClass('show').attr('aria-expanded', 'true')
+  var new_position = $(jump).offset().top;
+  console.log(new_position)
+  $('body').stop().animate({ scrollTop: new_position + 500}, 500);
+  // $(jump).toggleClass('show').attr('aria-expanded', 'true')
   // if ($('#scroll-target').hasClass("collapsed")) {
   //   $('#scroll-target').toggleClass("collapsed")
   // }

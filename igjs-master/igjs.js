@@ -31,7 +31,7 @@ var formatPosts = (rawPosts, username) => {
 module.exports = {
   getPosts: user => {
     return new Promise((resolve, reject) => {
-      const url = 'https://allorigins.me/get?url=' + encodeURIComponent('https://instagram.com/' + user + '/')
+      const url = 'http://allorigins.me/get?url=' + encodeURIComponent('https://instagram.com/' + user + '/')
       request(url, function (error, response, body) {
         // if (e) throw e
         console.log('error:', error); // Print the error if one occurred
