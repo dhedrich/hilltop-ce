@@ -726,6 +726,15 @@ a.navbar-brand.mx-auto {
 	}
 	
 }
+
+@media (max-width: 768px) {
+	.map-expand {
+		min-height: 300px;
+	}
+	.map-expand iframe {
+		min-height: 300px;
+	}
+}
 @media (max-width: 992px) {
 	a.navbar-brand.mx-auto {
 		font-size: 26px;
