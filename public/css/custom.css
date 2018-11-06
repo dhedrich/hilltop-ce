@@ -61,7 +61,7 @@
 	color: #a5c2a4;
 }
 .carousel-item .home-carousel {
-	height: 222px;
+	/* height: 222px; */
 }
 .row {
 	margin:0;
@@ -93,20 +93,20 @@
 	box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
 }
 .about-us-left {
-	margin-left: 1.1em;
+	margin-left: 1.5em;
 	margin-right: 60%;
 }
 .about-us-right {
-	margin-right: 1.1em;
+	margin-right: 1.5em;
 	margin-left: 60%;
 }
 @media (max-width: 992px) {
 	.about-us-left {
-		margin-left: 1.1em;
+		margin-left: 1.5em;
 		margin-right: 30%;
 	}
 	.about-us-right {
-		margin-right: 1.1em;
+		margin-right: 1.5em;
 		margin-left: 30%;
 	}
 }
@@ -183,7 +183,7 @@
 	font-size: 32px;
 }
 .testimonial-preview {
-	min-height: 300px;
+	height:100%;
 	margin: 0;
 }
 .home-quote {
@@ -283,6 +283,13 @@ h1, h2, h3, h4, h5  {
 .relative-box {
 	position: relative;
 }
+.map-container {
+	position: absolute;
+	float: left;
+	clear: both; 
+	width: 100%;
+	height: 100%;
+}
 .slogan-content {
 	background-image: url(../img/old_couple.jpg);
 	/* height: 90vh; */
@@ -330,6 +337,15 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content6 {
 	background-image: url(../img/notepad.jpg);
+	/* height: 90vh; */
+	min-height:550px;
+	background-size: cover;
+	/* background: #a5c2a433; */
+	padding: 80px 0px;
+	box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.slogan-content7 {
+	background-image: url(../img/backyard-house.jpg);
 	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
@@ -661,7 +677,7 @@ a.navbar-brand.mx-auto {
 	.row.section-content > div {
 		padding-left:0;
 		padding-right:0;
-		min-height: 300px;
+		/* min-height: 300px; */
 	}
 	.carousel-inner {
 		max-height: auto;

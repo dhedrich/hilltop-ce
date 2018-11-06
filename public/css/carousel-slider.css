@@ -31,7 +31,7 @@
 }
 @media (max-width: 767.5px) {
 	.swiper-container{
-		height: 45vh;
+		height: 60vh;
 	}
 	.main-slider .swiper-pagination-bullet {
 		width: 5px !important;
