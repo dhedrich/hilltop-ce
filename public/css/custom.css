@@ -94,11 +94,11 @@
 }
 .about-us-left {
 	margin-left: 1.1em;
-	margin-right: 50%;
+	margin-right: 60%;
 }
 .about-us-right {
 	margin-right: 1.1em;
-	margin-left: 50%;
+	margin-left: 60%;
 }
 @media (max-width: 992px) {
 	.about-us-left {
@@ -138,7 +138,7 @@
 }
 @media (max-width: 576px){
 	.about-us-text p {
-		font-size:3.7vw;
+		font-size:2.7vw;
 	}
 }
 .about-us-text a {
@@ -185,6 +185,9 @@
 .testimonial-preview {
 	min-height: 300px;
 	margin: 0;
+}
+.home-quote {
+	color:#fff !important;
 }
 .btn-reviews {
 	position: absolute;
@@ -883,6 +886,7 @@ a.navbar-brand.mx-auto {
 .footer-sec h3{
 	text-align: center;
 	color: #000;
+	color: #144d24;
 	/* font-weight: bold; */
 }
 
