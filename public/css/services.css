@@ -35,7 +35,7 @@
 }
 #accordionExample .dcp-list {
   /* padding: inherit; */
-  padding: 45px;
+  padding: 0 45px;
 }
 #accordionExample .card-body p {
   font-size: 22px;
@@ -75,6 +75,12 @@
   background-color: #a5c2a4;
   text-decoration: none;
   border-radius: 0px;
+  overflow: auto;
+}
+@media (max-width: 576px) {
+  #accordionExample a {
+    font-size: 12px;
+  }
 }
 #accordionExample .card-header a.collapsed:hover,
 #accordionExample .card-header a.collapsed:focus {
