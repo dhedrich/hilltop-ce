@@ -2,6 +2,12 @@
 .blog-entries { 
     margin-top: 20px;
 }
+.card-body {
+    background-image: url(../img/square-bq.png)
+}
+.card-body.bg-white {
+    background: #fff;
+}
 
 .details-card {
     background: #ecf0f1;
@@ -116,17 +122,17 @@
     text-decoration: none;
     color: #fff;
 }
-.btn-services {
+.btn-services, .btn-reviews  {
     background-color: #144d24; 
 }
-.btn-card, .btn-reviews {
+.btn-card{
 	background-color: #a5c2a4;
 }
-.btn-card:hover, .btn-reviews:hover {
+.btn-card:hover {
     background: #144d24;
     color: #fff;
 }
-.btn-services:hover {
+.btn-services:hover, .btn-reviews:hover{
     background: #a5c2a4;
     color: #fff;
 }

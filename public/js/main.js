@@ -27,17 +27,17 @@ window.setInterval(function () {
 }, 120 / 1000);
 
 /*------- Scroll To Button -------*/
-jQuery('.scroll-to').click(function(e){
-	var jump = $(this).attr('href');
-  var new_position = $(jump).offset().top;
-  console.log(new_position)
-  $('body').stop().animate({ scrollTop: new_position + 500}, 500);
-  // $(jump).toggleClass('show').attr('aria-expanded', 'true')
-  // if ($('#scroll-target').hasClass("collapsed")) {
-  //   $('#scroll-target').toggleClass("collapsed")
-  // }
-	e.preventDefault();
-});
+// jQuery('.scroll-to').click(function(e){
+// 	var jump = $(this).attr('href');
+//   var new_position = $(jump).offset().bottom;
+//   console.log(new_position)
+//   $('body').stop().animate({ scrollTop: new_position}, 500);
+//   // $(jump).toggleClass('show').attr('aria-expanded', 'true')
+//   // if ($('#scroll-target').hasClass("collapsed")) {
+//   //   $('#scroll-target').toggleClass("collapsed")
+//   // }
+// 	e.preventDefault();
+// });
 
 /* Edit font size to fill container */
 

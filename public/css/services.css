@@ -37,9 +37,10 @@
   /* padding: inherit; */
   padding: 0 45px;
 }
-#accordionExample .card-body p {
-  font-size: 22px;
-  padding: 12px 0;
+#accordionExample .card-body p, li {
+  font-size: 18px;
+  color: #000;
+
 }
 
 #accordionExample .card-body li:before {
@@ -61,6 +62,9 @@
 }
 #accordionExample {
   margin-bottom: 50px;
+}
+#accordionExample .collapse {
+  background-image: url(../img/square-bq.png)
 }
 #accordionExample .card-header {
   border-radius: 0;
