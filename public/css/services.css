@@ -33,8 +33,28 @@
     font-size: 16px;
   }
 }
-#accordionExample li {
+#accordionExample .dcp-list {
+  /* padding: inherit; */
+  padding: 45px;
+}
+#accordionExample .card-body p {
+  font-size: 22px;
+  padding: 12px 0;
+}
+
+#accordionExample .card-body li:before {
+  content: '\f06c';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #144d24;
   font-size: 18px;
+}
+#accordionExample .card-body li {
+  padding-left: 10px;
+  list-style: none;
+  font-size: 22px;
+  /* padding: 0; */
 }
 #accordionExample {
   margin-bottom: 50px;
