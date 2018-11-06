@@ -39,6 +39,9 @@ jQuery('.scroll-to').click(function(e){
 	e.preventDefault();
 });
 
+/* Edit font size to fill container */
+
+
 
 /*------- Smooth Scroll -------*/
 var photoArr = [

@@ -50,10 +50,13 @@
   color: #144d24;
   font-size: 18px;
 }
+#accordionExample .card-body li.price:before {
+  color: #144d2400;
+}
 #accordionExample .card-body li {
-  padding-left: 10px;
+  padding-left: 1px;
   list-style: none;
-  font-size: 22px;
+  font-size: 18px;
   /* padding: 0; */
 }
 #accordionExample {
@@ -243,4 +246,8 @@
       text-align: right;
       line-height:12px;
     }
-    
+    @media (max-width: 576px) {
+      .princing-item {
+        margin: 25px;
+    }
+  }

@@ -4,6 +4,8 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 /* GLOBAL STYLES
 -------------------------------------------------- */
+/* Edit font size based on screen width */
+
 /* Padding below the footer and lighter body text */
 #slider-container {
 		/* height: 404px; */
@@ -91,7 +93,6 @@
 }
 
 .about-us-bg {
-	/* position: absolute; */
 	background: #a5c2a499;
 	height: 100%;
 	width:100%;
@@ -102,7 +103,17 @@
 }
 .about-us-text p {
 	line-height: 39px;
+	font-size: 1.2vw;
+	margin-bottom: 32px;
 	/* margin-bottom: 50px; */
+}
+@media (max-width: 992px){
+	.about-us-text p {
+		font-size:2.3vw;
+	}
+	.about-us-text h3 {
+		font-size:24px !important;
+	}
 }
 .about-us-text a {
 	position: absolute;
@@ -138,9 +149,6 @@
 	position: absolute;
 	right:    0;
 	bottom:   0;
-}
-.charge-text-2 h3 {
-	padding: 0 21px;
 }
 
 .about-us h3 {
@@ -246,7 +254,7 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content {
 	background-image: url(../img/old_couple.jpg);
-	height: 90vh;
+	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
 	/* background: #a5c2a433; */
@@ -255,7 +263,7 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content2 {
 	background-image: url(../img/grandma2.jpg);
-	height: 90vh;
+	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
 	/* background: #a5c2a433; */
@@ -264,7 +272,7 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content3 {
 	background-image: url(../img/ball.jpg);
-	height: 90vh;
+	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
 	/* background: #a5c2a433; */
@@ -273,7 +281,7 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content4 {
 	background-image: url(../img/book2.jpg);
-	height: 90vh;
+	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
 	/* background: #a5c2a433; */
@@ -282,7 +290,7 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content5 {
 	background-image: url(../img/cane.jpg);
-	height: 90vh;
+	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
 	/* background: #a5c2a433; */
@@ -291,7 +299,7 @@ h1, h2, h3, h4, h5  {
 }
 .slogan-content6 {
 	background-image: url(../img/notepad.jpg);
-	height: 90vh;
+	/* height: 90vh; */
 	min-height:550px;
 	background-size: cover;
 	/* background: #a5c2a433; */
@@ -609,6 +617,9 @@ a.navbar-brand.mx-auto {
 @media (max-width: 992px) {
 	a.navbar-brand.mx-auto {
 		font-size: 26px;
+	}
+	.block-slogan {
+		display: none;
 	}
 	.block-slogan-text {
 		color: #a5c2a4;

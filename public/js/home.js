@@ -36,29 +36,29 @@
 // }
 
 // get instagram posts
-$.ajax({
-    url: "/insta",
-    method: "GET",
-}).done(data => {
-    renderPosts(data)
-    console.log(data)
-}).error(error => {
-    console.log("Error: posts not found")
-})
+// $.ajax({
+//     url: "/insta",
+//     method: "GET",
+// }).done(data => {
+//     renderPosts(data)
+//     console.log(data)
+// }).error(error => {
+//     console.log("Error: posts not found")
+// })
 
-var renderPosts = data => {
-    for (var i = 0; i < 4; i++) {
-        if (i == 0) {
-            $(".carousel-inner").append(`<div class="carousel-item active"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
-        } else {
-            $(".carousel-inner").append(`<div class="carousel-item"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
-        }
-    }
-    // var divHeight = $(".insta-feed").height()
-    // console.log(divHeight)
-    // $(".map-zone").append(`<div style="width: 100%"><iframe width="100%" height="${divHeight}" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=28661%20Meadow%20Glen%20Way%20W%20%20Escondido%2C%20CA%2092026+(Hilltop%20Country%20Estate)&amp;ie=UTF8&amp;t=h&amp;z=14&amp;iwloc=B&amp;output=embed"
-    // frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>`)
-}
+// var renderPosts = data => {
+//     for (var i = 0; i < 4; i++) {
+//         if (i == 0) {
+//             $(".carousel-inner").append(`<div class="carousel-item active"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
+//         } else {
+//             $(".carousel-inner").append(`<div class="carousel-item"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
+//         }
+//     }
+//     // var divHeight = $(".insta-feed").height()
+//     // console.log(divHeight)
+//     // $(".map-zone").append(`<div style="width: 100%"><iframe width="100%" height="${divHeight}" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=28661%20Meadow%20Glen%20Way%20W%20%20Escondido%2C%20CA%2092026+(Hilltop%20Country%20Estate)&amp;ie=UTF8&amp;t=h&amp;z=14&amp;iwloc=B&amp;output=embed"
+//     // frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>`)
+// }
 
 var photoArr = [
     "umbrella",
