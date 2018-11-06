@@ -258,6 +258,7 @@
       display: inline-block;
       float: right;
       text-align: right;
+      margin-bottom: 20px;
     }
     .fine-print p {
       text-align: right;
@@ -265,6 +266,6 @@
     }
     @media (max-width: 576px) {
       .princing-item {
-        margin: 25px;
+        margin: 25px 0;
     }
   }

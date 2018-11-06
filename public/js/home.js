@@ -60,6 +60,25 @@
 //     // frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>`)
 // }
 
+// change text on carousel "schedule tour" link
+
+$(document).ready(buttonPopulate)
+
+$(window).resize(buttonPopulate)
+
+function buttonPopulate() {
+    var button = $('.change-text')
+    button.empty()
+    console.log(button.width())
+    if (button.width() < 300) {
+        button.text('schedule tour')
+    }
+    else {
+        button.text('Click or call to schedule a tour today!')
+    }
+    button.append('&nbsp;&nbsp;<i class="fa fa-angle-right"></i>')
+}
+
 var photoArr = [
     "umbrella",
     "twin-trees",

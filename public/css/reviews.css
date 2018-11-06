@@ -26,10 +26,15 @@
   min-height: 120px;
 }
 .quote-card p {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.5;
   margin: 0;
   max-width: 90%;
+}
+@media (max-width: 1050px) {
+  .quote-card p {
+    font-size: 22px;
+  }
 }
 .quote-card cite {
   font-size: 16px;
@@ -58,6 +63,9 @@
   font-size: 25em;
   color: rgba(238, 238, 238, 0.8);
   font-weight: normal;
+}
+.no-quote:before, .no-quote:after {
+  content: "";
 }
 @media (max-width: 640px) {
   .quote-card:after {

@@ -86,7 +86,7 @@
 	margin: 80px;
 }
 .about-us {
-	background: #a5c2a4;
+	background: #a5c2a4ee;
 	color:#fff;
 	width: 100%;
 	/* margin-left: 5.5em; */
@@ -161,7 +161,6 @@
 }
 .charge-text-2 {
 	margin: 30px;
-	padding-bottom: 30px;
 }
 .charge-text-2 p {
 	line-height: 2.2em;
@@ -192,6 +191,12 @@
 .btn-reviews {
 	position: absolute;
 	left:    0;
+	bottom:   0;
+	/* margin-top: 20px; */
+}
+.btn-map {
+	position: absolute;
+	right:    0;
 	bottom:   0;
 	/* margin-top: 20px; */
 }
@@ -412,6 +417,66 @@ section {
 /* .hidden1, .hidden2, .hidden3, {
 	opacity: 0;
 } */
+.carousel-text {
+    padding: 20px 20px 30px 20px;
+	z-index: 20;
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background: #a5c2a4;
+	color:#fff;
+	width:40%;
+	/* margin-left: 5.5em; */
+	box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.carousel-text {
+	text-align: center;
+	background: #a5c2a4ee;
+}
+.welcome-home {
+	font-size: 48px;
+	padding: 0 !important;
+}
+@media (max-width: 1255px) {
+	.welcome-home {
+		font-size: 36px;
+	}
+}
+@media (max-width: 1004px) {
+	.welcome-home {
+		font-size: 28px;
+	}
+}
+@media (max-width: 731px) {
+	.welcome-home {
+		font-size: 20px;
+	}
+}
+@media (max-width: 586px) {
+	.welcome-home {
+		font-size: 14px;
+		padding: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media (max-width: 415px) {
+	.welcome-home {
+		font-size: 13px;
+	}
+}
+@media (max-width: 1125px) {
+	.carousel-text a {
+		font-size: 14px;
+	}
+}
+@media (max-width: 415px) {
+	.carousel-text a {
+		font-size: 12px;
+	}
+}
 
 /* Instagram Slider 
 ...................................................*/
