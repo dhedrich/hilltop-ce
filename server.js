@@ -116,7 +116,10 @@ const scraper = require('./igjs-master/igjs')
 
 app.get('/insta', (req, res) => {
     let postPromise = scraper.getPosts('verveseniorliving')
-    postPromise.then(posts => res.send(posts))
+    postPromise.then(posts => {
+        console.log(posts)
+        res.send(posts)
+    })
 })
 
 

@@ -83,7 +83,10 @@
 .card-desc {
     padding: 1.25rem;
 }
-
+.testimonial-preview{
+    background-image: none;
+    background: rgba(164,194,168,1)!important;
+}
 .card-desc h3 {
     /* color: #000000; */
     color: #144d24;
