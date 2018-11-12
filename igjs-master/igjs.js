@@ -3,6 +3,10 @@ var request = require("request")
 var formatPosts = (rawPosts, username) => {
   let result = [];
   rawPosts = JSON.parse(rawPosts)
+  if (rawPosts.contents.split('window._sharedData = ')[1] == undefined) {
+    console.log("UNDEFINED")
+    return
+  }
   rawPosts = JSON.parse(rawPosts.contents.split('window._sharedData = ')[1].split('\;\<\/script>')[0]).entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges
   rawPosts.forEach(function (item) {
     result.push({
@@ -33,7 +37,7 @@ module.exports = {
     return new Promise((resolve, reject) => {
       const url = 'http://allorigins.me/get?url=' + encodeURIComponent('https://instagram.com/' + user + '/')
       request(url, function (error, response, body) {
-        // if (e) throw e
+        if (error) console.log(error)
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         resolve(formatPosts(body))

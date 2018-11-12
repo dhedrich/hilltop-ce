@@ -65,7 +65,8 @@
   padding-left: 0;
 }
 #accordionExample {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
+  margin-top: 30px;
 }
 #accordionExample .collapse {
   background-image: url(../img/square-bq.png)
@@ -184,6 +185,9 @@
     ul li.price {
     margin: 0 0 1.6rem 0;
     }
+    .btn-custom1:focus{
+      outline:0;
+    }
     .pricing-divider {
     border-radius: 20px;
     background: #C64545;
@@ -269,3 +273,7 @@
         margin: 25px 0;
     }
   }
+
+.service-header {
+  padding: 0;
+}

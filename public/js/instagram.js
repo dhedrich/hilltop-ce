@@ -16,5 +16,6 @@ var renderPosts = data => {
         } else {
             $(".carousel-inner").append(`<div class="carousel-item"><img class="d-block w-100" src="${data[i].thumbnails.lg}" alt="First slide"><div class="carousel-caption d-none d-md-block"><p class="hover-caption">${data[i].caption}</p></div></div>`)
         }
-    }  
+    }
+    $("#error-message").remove()
 }
