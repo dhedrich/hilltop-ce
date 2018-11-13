@@ -1,6 +1,6 @@
 /*--------Blog Cards--------*/
 .blog-entries { 
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .card-body {
     background-image: url(../img/square-bq.png)
