@@ -1,6 +1,32 @@
+// run lightbox on page load
 $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   event.preventDefault()
   $(this).ekkoLightbox()
+})
+
+// send email from contact form
+$('#submit').on('click', function (event) {
+  console.log("WORKING")
+  event.preventDefault()
+  var data = {}
+
+  data.name = $('#contactName').val().trim()
+  data.email = $('#contactEmail').val().trim()
+  data.message = $('#contactMessage').val().trim()
+  data.facility = 'Hilltop Country Estate'
+
+  $.ajax({
+    url: "/email",
+    method: "POST",
+    data: data
+  }).error(error => {
+    console.log("Error: message not sent")
+  })
+
+  alert("Thank you for your message!")
+    $('#contactName').val('')
+    $('#contactEmail').val('')
+    $('#contactMessage').val('')
 })
 
 // ease-in animation when element is within viewport
@@ -12,7 +38,7 @@ $.fn.isInViewport = function () {
   return elementBottom > viewportTop && elementTop < viewportBottom
 }
 
-var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6"]
+var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8"]
 
 window.setInterval(function () {
   for (i in elArray) {
@@ -26,35 +52,8 @@ window.setInterval(function () {
   }
 }, 120 / 1000);
 
-/*------- Scroll To Button -------*/
-// jQuery('.scroll-to').click(function(e){
-// 	var jump = $(this).attr('href');
-//   var new_position = $(jump).offset().bottom;
-//   console.log(new_position)
-//   $('body').stop().animate({ scrollTop: new_position}, 500);
-//   // $(jump).toggleClass('show').attr('aria-expanded', 'true')
-//   // if ($('#scroll-target').hasClass("collapsed")) {
-//   //   $('#scroll-target').toggleClass("collapsed")
-//   // }
-// 	e.preventDefault();
-// });
-
-/* Edit font size to fill container */
-
-
-
-/*------- Smooth Scroll -------*/
+// Photo array logic for bootstrap carousels
 var photoArr = [
-  // "canopy",
-  // "front-fence",
-  // "front-sun-tree",
-  // "backyard-charms",
-  // "landscape",
-  // "backyard-green",
-  // "hilltop1-2"
-  // "hilltop1-umbrella",
-  // "double-tree",
-  // "sunset",
   "umbrella",
   "twin-trees",
   "branch",
@@ -78,14 +77,11 @@ function shuffleArray(array) {
   }
 }
 
-// shuffleArray(photoArr)
-
 for (i in photoArr) {
   $(".gallery").append(`<a href="./img/${photoArr[i]}.jpg" data-toggle="lightbox" class="col-sm-4" data-gallery="example-gallery"><img src="./img/${photoArr[i]}.jpg" class="img-fluid gallery-pic"/></a>`)
 }
 
 /*------- Smooth Scroll -------*/
-
 $('a[href^="#"]').on('click', function (event) {
 
   var target = $($(this).attr('href'))
@@ -96,24 +92,12 @@ $('a[href^="#"]').on('click', function (event) {
       scrollTop: target.offset().top
     }, 1000)
   }
-
 })
 
 /*------- Gallery Image Select -------*/
 $('.item').click(function () {
   $(this).toggleClass('active')
 })
-
-/*------- Instagram Scraper--------*/
-
-// $.ajax({
-//   method: "GET",
-//   url: ""
-// }).done(function (data) {
-//   console.log("WORKING")
-//   console.log(data)
-// })
-
 
 /**
  * Swiper 3.4.0
@@ -156,11 +140,6 @@ var swiper = new Swiper('.swiper-container', {
   loop: true,
   autoplayDisableOnInteraction: false
 })
-
-
-
-
-
 
 /* ========================================================================
 * ScrollPos-Styler v0.6
