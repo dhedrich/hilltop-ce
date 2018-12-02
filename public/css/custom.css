@@ -438,7 +438,8 @@ h1, h2, h3, h4, h5  {
 	box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
 }
 .white-bg {
-    background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png);
+	/* background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png); */
+	background: #a5c2a4bb;
 }
 .gallery-header {
 	padding: 50px 0 0 21px;
@@ -481,7 +482,7 @@ section {
 	height:100%;
 	/* border: 8px solid #a5c2a4; */
 	color: #183600;
-    background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png);
+    /* background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png); */
 	width:100%;
 	padding: 20px;
 	/* box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24); */
@@ -719,7 +720,7 @@ section {
 	border-radius: 0;
 	padding: 6px 0;
 	z-index: 6;
-	border-bottom: 8px solid #a5c2a4;
+	border-bottom: 8px solid #144d24;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 .navbar-toggler {
@@ -1071,13 +1072,13 @@ a.navbar-brand.mx-auto {
 .footer-sec{
 	width: 100%;
 	float: left;
-	background: #a5c2a4;
-	background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png);
+	background: #183600;
+	/* background-image: url(../img/qwoeiuohevjahbhvfkdbacdlsajblliuewhfag.png); */
 }
 .footer-sec h3{
 	text-align: center;
 	color: #000;
-	color: #144d24;
+	color: #a5c2a4;
 	/* font-weight: bold; */
 }
 
@@ -1191,6 +1192,12 @@ a.socialIcon:hover, .socialHoverClass {
 	-o-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	transition: all 0.8s;
+}
+
+.text-edit {
+	font-size: 20px!important;
+    letter-spacing: 0.4px!important;
+    line-height: 29px!important;
 }
 /**
  * Swiper 3.4.0
