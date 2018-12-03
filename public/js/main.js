@@ -39,19 +39,24 @@ $.fn.isInViewport = function () {
 }
 
 // replace nav logo with brand name when page is not at top scroll position
-$(window).on('scroll', function () {
-  var scrollTop = $(this).scrollTop()
-  var brand = $('.navbar-brand.mx-auto')
+$(window).on('scroll', logoToggle)
 
-  if (scrollTop != 0) {
-    // console.log("NOT AT TOP")
+$(document).ready(logoToggle)
+
+function logoToggle() {
+  var isAtTop = $(window).scrollTop()
+  var width = $(window).width()
+  var brand = $('.navbar-brand.mx-auto')
+  console.log(isAtTop, width)
+  if (isAtTop != 0 || width < 992) {
     brand.removeClass('logo-brand')
     brand.html('Hilltop <span>Country Estate</span>')
-  } else {
+  } 
+  else {
     brand.addClass('logo-brand')
     brand.html('<img src="./img/Hilltop Logo Final Green.png" alt="logo">')
   }
-}) 
+}
 
 var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8", "hidden9", "hidden10"]
 
