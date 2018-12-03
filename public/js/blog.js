@@ -3,7 +3,7 @@ $.ajax({
     url: "/scrape",
     method: "GET",
 }).done(data => {
-    renderBlog(data)    console.log(data)
+    renderBlog(data)
 }).error(error => {
     console.log("Error: posts not found")
 })
