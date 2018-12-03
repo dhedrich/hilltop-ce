@@ -24,9 +24,9 @@ $('#submit').on('click', function (event) {
   })
 
   alert("Thank you for your message!")
-    $('#contactName').val('')
-    $('#contactEmail').val('')
-    $('#contactMessage').val('')
+  $('#contactName').val('')
+  $('#contactEmail').val('')
+  $('#contactMessage').val('')
 })
 
 // ease-in animation when element is within viewport
@@ -37,6 +37,21 @@ $.fn.isInViewport = function () {
   var viewportBottom = viewportTop + $(window).height()
   return elementBottom > viewportTop && elementTop < viewportBottom
 }
+
+// replace nav logo with brand name when page is not at top scroll position
+$(window).on('scroll', function () {
+  var scrollTop = $(this).scrollTop()
+  var brand = $('.navbar-brand.mx-auto')
+
+  if (scrollTop != 0) {
+    // console.log("NOT AT TOP")
+    brand.removeClass('logo-brand')
+    brand.html('Hilltop <span>Country Estate</span>')
+  } else {
+    brand.addClass('logo-brand')
+    brand.html('<img src="./img/Hilltop Logo Final Green.png" alt="logo">')
+  }
+}) 
 
 var elArray = ["hidden1", "hidden2", "hidden3", "hidden4", "hidden5", "hidden6", "hidden7", "hidden8", "hidden9", "hidden10"]
 

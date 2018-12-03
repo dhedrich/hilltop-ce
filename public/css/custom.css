@@ -442,7 +442,11 @@ h1, h2, h3, h4, h5  {
 	background: #a5c2a4bb;
 }
 .gallery-header {
-	padding: 50px 0 0 21px;
+	padding: 50px 0 0 0;
+}
+.gallery-header h3 {
+	margin-right: auto;
+    margin-left: auto;
 }
 section {
 	float: left;
@@ -773,7 +777,11 @@ section {
 	font-weight: 500;
 	padding: 12px 18px!important;
 	border-bottom: 2px solid #00000000;
-	color: #000
+	color: #000;
+	transition: 0.2s;
+}
+.top-bar .nav-link {
+
 }
 .top-bar .navbar-nav .nav-item {
 	margin: 0
@@ -782,6 +790,7 @@ section {
 	color: #a5c2a4;
 	border-bottom: 2px solid #a5c2a4;
 	border-radius: 0;
+	transition: 0.2s;
 }
 .nav-item.active:hover {
 	border: none;
@@ -817,8 +826,22 @@ section {
 	border-color: #183600;
 }
 
-a.navbar-brand.mx-auto {
+.navbar-brand.mx-auto {
 	padding-left: 0;
+	transition: 0.2s;
+}
+
+a.logo-brand {
+	position: absolute;
+	border-bottom: 8px solid #144d24;
+	background: #fffee8;
+	height: 250px;
+	transition: 0.2s;
+}
+a.logo-brand img {
+	height: 55%;
+    margin-top: 6.3rem;
+    margin-right: 14px;
 }
 
 @media (max-width: 1200px) {
