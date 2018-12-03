@@ -828,15 +828,19 @@ section {
 
 .navbar-brand.mx-auto {
 	padding-left: 0;
-	transition: 0.2s;
+	/* transition: 0.2s; */
 }
 
 a.logo-brand {
 	position: absolute;
 	border-bottom: 8px solid #144d24;
+	border-left: 8px solid #144d24;
+	border-right: 8px solid #144d24;
 	background: #fffee8;
 	height: 250px;
-	transition: 0.2s;
+	/* transition: 0.2s; */
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
 }
 a.logo-brand img {
 	height: 55%;
