@@ -35,9 +35,10 @@ var formatPosts = (rawPosts, username) => {
 module.exports = {
   getPosts: user => {
     return new Promise((resolve, reject) => {
-      const url = 'http://api.allorigins.ml/get?url=' + encodeURIComponent('https://instagram.com/' + user + '/')
+      const url = 'http://api.allorigins.win/get?url=' + encodeURIComponent('https://instagram.com/' + user + '/')
       request(url, function (error, response, body) {
         if (error) console.log(error)
+        console.log(body)
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
         resolve(formatPosts(body))
